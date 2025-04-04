@@ -110,6 +110,27 @@ section {
   font-size: 0.8rem;
 }
 
+.img-div {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--border-radius-small);
+}
+
+.big-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.project-card:first-child .img-div img {
+  border: 2px solid var(--border-highlight);
+}
+
+[alt="online_store-thumbnail"] {
+  border: 2px solid var(--border-highlight);
+}
+
 @media (min-width: 640px) {
   .project-card {
     flex-direction: row;
