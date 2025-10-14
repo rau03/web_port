@@ -165,3 +165,54 @@ section {
     flex: 1;
   }
 }
+/* Improve readability for case-study screenshots */
+.before-after .big-img {
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: var(--background-muted);
+  border: 1px solid var(--border-primary);
+  /* Keep screenshots readable on smaller screens */
+.before-after .big-img {
+  max-height: 80vh;
+}
+}
+/* Before/After badge overlay */
+.before-after .img-div {
+  position: relative;
+}
+/* 
+.before-after .img-div::after {
+  content: attr(data-badge);
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--background-primary);
+  background: var(--color-link);
+  border-radius: 999px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  pointer-events: none;
+} */
+
+/* Before/After badge overlay – subtle pill */
+.before-after .img-div::after {
+  content: attr(data-badge);
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--border-secondary);
+  border-radius: 999px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  pointer-events: none;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
