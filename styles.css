@@ -140,3 +140,28 @@ section {
     max-width: 30%;
   }
 }
+.before-after {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.before-after figure {
+  width: 100%;
+}
+
+.before-after figcaption {
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+}
+
+@media (min-width: 640px) {
+  .before-after {
+    flex-direction: row;
+  }
+
+  .before-after figure {
+    flex: 1;
+  }
+}
