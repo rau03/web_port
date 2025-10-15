@@ -137,7 +137,7 @@ section {
   }
 
   .project-card .img-div {
-    max-width: 30%;
+    max-width: 40%;
   }
 }
 .before-after {
@@ -171,10 +171,11 @@ section {
   object-fit: contain;
   background: var(--background-muted);
   border: 1px solid var(--border-primary);
-  /* Keep screenshots readable on smaller screens */
+}
+
+/* Keep screenshots readable on smaller screens */
 .before-after .big-img {
   max-height: 80vh;
-}
 }
 /* Before/After badge overlay */
 .before-after .img-div {
@@ -211,8 +212,115 @@ section {
   background: rgba(255, 255, 255, 0.85);
   border: 1px solid var(--border-secondary);
   border-radius: 999px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
   pointer-events: none;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
+}
+/* Subtle status badge */
+.status-badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: var(--background-muted);
+  border: 1px solid var(--border-secondary);
+  border-radius: 999px;
+  vertical-align: middle;
+}
+
+/* Disabled project link (e.g., Live while private) */
+.project-links a[aria-disabled="true"] {
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+/* Compact status list */
+.status-list {
+  padding-left: 1rem;
+  margin: 0.25rem 0 0.5rem;
+}
+.status-list li {
+  line-height: 1.4rem;
+}
+/* Utility: bordered project image */
+.img-bordered {
+  border: 2px solid var(--border-highlight);
+  border-radius: var(--border-radius-small);
+}
+/* Keep Mountain Pathway (and all) project images consistent with other cards */
+.project-card .big-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 640px) {
+  .project-card .img-div {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+}
+
+/* Larger image column for readability on selected cards */
+@media (min-width: 640px) {
+  .project-card-readable .img-div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Compact image column for visually heavy screenshots */
+@media (min-width: 640px) {
+  .project-card-compact .img-div {
+    flex: 0 0 32%;
+    max-width: 32%;
+  }
+}
+
+/* Medium image column for slightly larger readability */
+@media (min-width: 640px) {
+  .project-card-medium .img-div {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+}
+
+/* Utility: readable screenshots in project cards (no crop) */
+.project-card .big-img.img-readable {
+  object-fit: contain;
+  aspect-ratio: 16/9;
+  background: var(--background-muted);
+  border: 1px solid var(--border-primary);
+}
+
+/* Lightbox for full-size previews */
+.lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+  cursor: zoom-out;
+}
+
+.lightbox-backdrop.open {
+  display: flex;
+}
+
+.lightbox-backdrop img {
+  max-width: 92vw;
+  max-height: 92vh;
+  background: var(--background-primary);
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--border-radius-small);
 }

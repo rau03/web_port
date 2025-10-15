@@ -97,48 +97,74 @@ I apply this rigor to my core technical stack: Next.js, TypeScript, and React. I
               <!-- <td>Concepts</td>
               <td>Accessibility | Agile | OOP | UI/UX | Responsive Design</td>
               </tr> -->
-              
             </tr>
           </tbody>
         </table>
       </section>
       <section>
         <h2>Latest Projects</h2>
-        <div class="cards-grid">
-                    <div class="project-card">
-            <div>
-              <p>October 2025</p>
-              <h4>The Mountain Pathway <span class="status-badge">In Progress</span></h4>
+<div class="project-card project-card-readable">
+  <div>
+    <p>October 2025</p>
+    <h4>Mountain Pathway <span class="status-badge">In Progress</span></h4>
+    <div class="tech-list">
+      <div class="card-button-secondary"><p>Next.js</p></div>
+      <div class="card-button-secondary"><p>TypeScript</p></div>
+      <div class="card-button-secondary"><p>React</p></div>
+      <div class="card-button-secondary"><p>Tailwind CSS</p></div>
+      <div class="card-button-secondary"><p>Zustand</p></div>
+      <div class="card-button-secondary"><p>Framer Motion</p></div>
+    </div>
 
-              <div class="tech-list">
-                <div class="card-button-secondary"><p>NextJS</p></div>
-                <div class="card-button-secondary"><p>TypeScript</p></div>
-                <div class="card-button-secondary"><p>TailwindCSS</p></div>
-              </div>
+    <p>
+  A calm, faith-centered journaling app guiding a 9‑step path from confusion to clarity—with ambient audio and responsive layouts.
+</p>
+    <ul class="status-list">
+  <li>Guided 9‑step journey</li>
+  <li>Desktop split‑screen + mobile bottom‑sheet</li>
+  <li>PDF export at completion</li>
+</ul>
+<details>
+  <summary>Roadmap</summary>
+  <ul>
+    <li>Save progress (Local Storage via Zustand persist)</li>
+  </ul>
+</details>
+      <summary>Full tech stack</summary>
+       <ul>
+        <li><strong>Framework</strong>: Next.js (App Router, RSC), React</li>
+        <li><strong>Language</strong>: TypeScript</li>
+        <li><strong>Styling/UI</strong>: Tailwind CSS, shadcn/ui, Radix UI</li>
+        <li><strong>State</strong>: Zustand (+persist)</li>
+        <li><strong>Animations</strong>: Framer Motion</li>
+        <li><strong>PDF</strong>: jsPDF, html2canvas</li>
+        <li><strong>Icons</strong>: Lucide React</li>
+        <li><strong>Audio</strong>: HTML5 Audio API</li>
+        <li><strong>Dev/Deploy</strong>: ESLint, Prettier, GitHub, Vercel</li>
+      </ul>
+    </details>
 
-              <p>
-                One-sentence value prop and what you’re building. Include problem, target users, and desired outcome.
-              </p>
-              <ul class="status-list">
-                <li>Scope: MVP shipping calculator + checkout</li>
-                <li>Current: API integration 80%, UI polish pending</li>
-                <li>Target launch: Nov 2025</li>
-              </ul>
+    <div class="project-links">
+      <a aria-disabled="true" title="Private during build">Live (Private)</a>
+      <a target="_blank" href="https://github.com/rau03/the-mountain-pathway">GitHub</a>
+      <a href="mailto:chris_rau@outlook.com?subject=Preview%20request%20for%20Mountain%20Pathway">Request access</a>
+    </div>
+  </div>
 
-              <div class="project-links">
-                <a aria-disabled="true" title="Private during build">Live (Private)</a>
-                <a target="_blank" href="https://github.com/your/repo">GitHub</a>
-                <a href="mailto:chris_rau@outlook.com?subject=Preview%20request%20for%20Project%20Name">Request access</a>
-              </div>
-            </div>
-            <!-- Optional teaser image -->
-            <!--
-            <div class="img-div">
-              <img class="big-img" src="./public/your-teaser.jpeg" alt="Project Name teaser" loading="lazy" decoding="async" />
-            </div>
-            -->
+  <div class="img-div">
+    <a href="./public/landing.jpeg" target="_blank" rel="noopener" title="Open full size">
+      <img
+        class="big-img img-bordered img-readable"
+        src="./public/landing.jpeg"
+        alt="Mountain Pathway landing hero teaser"
+        loading="lazy"
+        decoding="async"
+      />
+    </a>
+  </div>
+</div>
           </div>
-          <div class="project-card">
+          <div class="project-card project-card-medium">
             <div>
               <p>June 2025</p>
               <h4>Pickleball Court Hub</h4>
@@ -158,6 +184,7 @@ I apply this rigor to my core technical stack: Next.js, TypeScript, and React. I
                 <div class="card-button-secondary">
                   <p>Convex</p>
                 </div>
+                
               </div>
               <p>
               Pickleball Court Hub is a full-stack web app that helps players discover and share courts across the U.S. With an interactive map, real-time search, and user-submitted listings, it makes finding places to play fast and easy. Users can create profiles, add new courts, and connect with their local community. A mobile-first design and admin dashboard ensure the app stays accurate, accessible, and ready to scale.
@@ -174,15 +201,19 @@ I apply this rigor to my core technical stack: Next.js, TypeScript, and React. I
               </div>
             </div>
             <div class="img-div">
-              <img
-                class="big-img"
-                src="./public/court-finder-4.jpeg"
-                alt="online_store-thumbnail"
-              />
+              <a href="./public/pickleballcourthub.jpeg" target="_blank" rel="noopener" title="Open full size">
+                <img
+                  class="big-img img-readable"
+                  src="./public/pickleballcourthub.jpeg"
+                  alt="Pickleball Court Hub screenshot"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
             </div>
           </div>
         <div class="cards-grid">
-          <div class="project-card">
+          <div class="project-card project-card-medium">
             <div>
               <p>April 2025</p>
               <h4>The Digital Dragon Market</h4>
@@ -219,15 +250,19 @@ I apply this rigor to my core technical stack: Next.js, TypeScript, and React. I
               </div>
             </div>
             <div class="img-div">
-              <img
-                class="big-img"
-                src="./public/dragon.jpeg"
-                alt="online_store-thumbnail"
-              />
+              <a href="./public/digitaldragon.jpeg" target="_blank" rel="noopener" title="Open full size">
+                <img
+                  class="big-img img-readable"
+                  src="./public/digitaldragon.jpeg"
+                  alt="The Digital Dragon Market screenshot"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card project-card-medium">
             <div>
               <p>February 2025</p>
               <h4>Brogram</h4>
@@ -260,15 +295,19 @@ I apply this rigor to my core technical stack: Next.js, TypeScript, and React. I
               </div>
             </div>
             <div class="img-div">
-              <img
-                class="big-img"
-                src="./public/browork.jpeg"
-                alt="brogram-thumbnail"
-              />
+              <a href="./public/brogram.jpeg" target="_blank" rel="noopener" title="Open full size">
+                <img
+                  class="big-img img-readable"
+                  src="./public/brogram.jpeg"
+                  alt="Brogram app screenshot"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card project-card-medium">
             <div>
               <p>January 2025</p>
               <h4>Movie Search</h4>
@@ -300,15 +339,19 @@ I apply this rigor to my core technical stack: Next.js, TypeScript, and React. I
               </div>
             </div>
             <div class="img-div">
-              <img
-                class="big-img"
-                src="./public/moviesearch.jpeg"
-                alt="thumbnail"
-              />
+              <a href="./public/movie.jpeg" target="_blank" rel="noopener" title="Open full size">
+                <img
+                  class="big-img img-readable"
+                  src="./public/movie.jpeg"
+                  alt="Movie Search app screenshot"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card project-card-medium">
             <div>
               <p>December 2024</p>
               <h4>Acme Rockets</h4>
@@ -345,17 +388,21 @@ I apply this rigor to my core technical stack: Next.js, TypeScript, and React. I
               </div>
             </div>
             <div class="img-div">
-              <img
-                class="big-img"
-                src="./public/acmerockets.jpeg"
-                alt="thumbnail"
-              />
+            <a href="./public/rockets.jpeg" target="_blank" rel="noopener" title="Open full size">
+                <img
+                  class="big-img img-readable"
+                  src="./public/rockets.jpeg"
+                  alt="Acme Rockets screenshot"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
             </div>
           </div>
         </div>
       </section>
 <section id="pmj-printing-case-study">
-  <h2>Case Study: PMJ Printing: E-commerce Site Revamp for 40% Mobile Performance Gain</h2>
+  <h2>Case Study: PMJ Printing: E-commerce Site Revamp for 99% Desktop Performance</h2>
 
   <!-- Duplicate this .before-after block for additional sections (e.g., Product Listing, Footer, etc.) -->
    <h3>Landing Page</h3>
