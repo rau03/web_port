@@ -325,9 +325,24 @@ section {
   border-radius: var(--border-radius-small);
 }
 /* Mobile: prevent line breaks in the first column of the Skills table */
-@media (max-width: 639px) {
+/* @media (max-width: 639px) {
   table td:first-child,
   table th:first-child {
     white-space: nowrap;
+  }
+} */
+/* Mobile: put 'Frameworks' on its own line only for marked spans */
+.mobile-stack {
+  display: inline;
+}
+
+@media (max-width: 639px) {
+  .mobile-stack {
+    display: block;
+  }
+  /* Ensure the first column can wrap normally on mobile */
+  table td:first-child,
+  table th:first-child {
+    white-space: normal;
   }
 }
