@@ -351,3 +351,9 @@ section {
 .intro-normal {
   font-weight: 400;
 }
+/* Optional: unify body copy weight/size */
+body, p, li, td, th {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
