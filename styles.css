@@ -50,6 +50,7 @@ section {
 
 .intro-description {
   max-width: 500px;
+  font-weight: 400; 
 }
 
 .links-container {
@@ -345,4 +346,8 @@ section {
   table th:first-child {
     white-space: normal;
   }
+}
+/* Ensure selected intro text is normal weight when needed */
+.intro-normal {
+  font-weight: 400;
 }
