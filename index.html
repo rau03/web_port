@@ -48,7 +48,7 @@ I’m most effective in environments that value ownership, clarity, and engineer
         </h5>
         <div class="links-container">
           <i class="fa-solid link-arrow fa-arrow-right"></i>
-          <a href="mailto:chris_rau@outlook.com"> Email me </a>
+          <a href="/cdn-cgi/l/email-protection#680b001a011b371a091d28071d1c04070703460b0705"> Email me </a>
           <a target="_blank" href="https://github.com/rau03">GitHub</a>
           <a target="_blank" href="https://www.linkedin.com/in/raucp/"
             >LinkedIn</a
@@ -104,29 +104,34 @@ I’m most effective in environments that value ownership, clarity, and engineer
         <h2>Latest Projects</h2>
 <div class="project-card project-card-readable">
   <div>
-    <p>October 2025</p>
-    <h4>Mountain Pathway | MVP Launch & V2.0 Strategic Roadmap </h4>
+    <p>March 2026 — Submitted to App Store</p>
+    <h4>Mountain Pathway | Full-Stack Faith-Centered Journaling App</h4>
     <div class="tech-list">
       <div class="card-button-secondary"><p>Next.js</p></div>
       <div class="card-button-secondary"><p>TypeScript</p></div>
       <div class="card-button-secondary"><p>React</p></div>
       <div class="card-button-secondary"><p>Tailwind CSS</p></div>
+      <div class="card-button-secondary"><p>Supabase</p></div>
       <div class="card-button-secondary"><p>Zustand</p></div>
       <div class="card-button-secondary"><p>Framer Motion</p></div>
+      <div class="card-button-secondary"><p>Capacitor</p></div>
+      <div class="card-button-secondary"><p>iOS</p></div>
     </div>
 
     <p>
-     A calm, faith-centered journaling web application guiding users through a structured 9-step reflective journey. Designed, built, launched, and iterated as a live production product with a focus on intentional UX, performance, and emotional presence.
+      A faith-centered journaling app guiding users through a structured 9-step reflective experience. Built and shipped as a full-stack production product across web and iOS — with real users, a TestFlight beta program, and a completed App Store submission.
     </p>
 
     <details>
       <summary>What I Built &amp; Shipped</summary>
       <ul class="status-list">
         <li>Conceived and shipped a guided 9-step journaling experience, translating abstract spiritual reflection into a clear, repeatable interaction flow</li>
-        <li>Designed responsive layouts with desktop split-screen and mobile bottom-sheet patterns optimized for focus and readability</li>
+        <li>Implemented full Supabase authentication — sign up, login, forgot password, and password reset — with a patched open redirect vulnerability using strict URL origin validation</li>
+        <li>Built journey saving and persistence so users can return to and resume saved journeys across sessions, with Row Level Security (RLS) scoping each user's data</li>
+        <li>Wrapped the web app as a native iOS app using Capacitor; ran a structured TestFlight beta program with real users and iterated on UI, layout, and auth flows from their feedback</li>
+        <li>Implemented deep linking so password reset emails open directly in the app, and configured iOS AutoFill support with Keychain-friendly form semantics</li>
         <li>Implemented ambient audio playback and subtle motion to support stillness without distracting from content</li>
         <li>Built PDF export functionality at journey completion to allow users to retain reflections offline</li>
-        <li>Launched publicly and continue to maintain the product post-release, incorporating real user feedback into ongoing iteration</li>
       </ul>
     </details>
 
@@ -142,11 +147,11 @@ I’m most effective in environments that value ownership, clarity, and engineer
     <details>
       <summary>V2 Strategic Roadmap</summary>
       <ul>
-        <li>Persistent journey saving (Zustand + local storage; migration planned)</li>
-        <li>User authentication and multi-session journaling (Supabase)</li>
-        <li>Multiple guided journaling &ldquo;trails&rdquo;</li>
-        <li>Enhanced rich-text editing for reflection entries</li>
-        <li>Optional project support / &ldquo;Buy Me a Coffee&rdquo; integration</li>
+        <li>Multiple guided journaling &ldquo;trails&rdquo; with distinct themes and step structures</li>
+        <li>Android / cross-platform support via Capacitor</li>
+        <li>Push notifications and journaling streaks for habit formation</li>
+        <li>Enhanced rich-text and media support for reflection entries</li>
+        <li>Community features for shared journaling and group discipleship paths</li>
       </ul>
     </details>
     <details>
@@ -156,10 +161,12 @@ I’m most effective in environments that value ownership, clarity, and engineer
         <li><strong>Language</strong>: TypeScript</li>
         <li><strong>UI &amp; Styling</strong>: Tailwind CSS, shadcn/ui, Radix UI</li>
         <li><strong>State Management</strong>: Zustand (+ persist)</li>
+        <li><strong>Backend &amp; Auth</strong>: Supabase (PostgreSQL, Row Level Security, Auth)</li>
+        <li><strong>Mobile</strong>: Capacitor (iOS native wrapper), deep linking, iOS AutoFill</li>
         <li><strong>Animation</strong>: Framer Motion</li>
         <li><strong>PDF Generation</strong>: jsPDF, html2canvas</li>
         <li><strong>Audio</strong>: HTML5 Audio API</li>
-        <li><strong>Icons</strong>: Lucide React</li>
+        <li><strong>Testing</strong>: Vitest</li>
         <li><strong>Dev &amp; Deployment</strong>: ESLint, Prettier, GitHub, Vercel</li>
       </ul>
     </details>
@@ -167,7 +174,7 @@ I’m most effective in environments that value ownership, clarity, and engineer
     <div class="project-links">
       <a target="_blank" href="https://www.themountainpathway.com/">Live</a>
       <a target="_blank" href="https://github.com/rau03/the-mountain-pathway">GitHub</a>
-      <!-- <a href="mailto:chris_rau@outlook.com?subject=Preview%20request%20for%20Mountain%20Pathway">Request access</a> -->
+      <!-- <a target="_blank" href="#">App Store (coming soon)</a> -->
     </div>
   </div>
 
@@ -598,7 +605,7 @@ I’m most effective in environments that value ownership, clarity, and engineer
         ></a>
       </p>
     </footer>
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
       //This is where we create the interactivity for our color switching game
 
       //1.select all the html elements so that we can later manipulate them
@@ -635,7 +642,4 @@ I’m most effective in environments that value ownership, clarity, and engineer
         colorDiv.style.display = "none";
       }
 
-      //3.is to assign the functions to the buttons by adding them function call to the actual elements (don above in the html code)
-    </script>
-  </body>
-</html>
+      //3.is 
