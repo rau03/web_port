@@ -55,20 +55,6 @@ I’m most effective in environments that value ownership, clarity, and engineer
           >
         </div>
 
-        <div id="play-game">
-          <button onclick="playGame()">Play game???</button>
-        </div>
-        <div style="display: none" class="color-div">
-          <h4>Pick a color</h4>
-          <p style="display: none">Great...now it's ruined!</p>
-          <input
-            type="color"
-            id="color-picker"
-            onchange="changeColor()"
-            value="#0084ff"
-          />
-          <button style="display: none" onclick="resetColor()">Reset</button>
-        </div>
       </section>
 
       <section>
@@ -106,6 +92,7 @@ I’m most effective in environments that value ownership, clarity, and engineer
   <div>
     <p>March 2026 — Submitted to App Store</p>
     <h4>Mountain Pathway | Full-Stack Faith-Centered Journaling App</h4>
+    <p>iOS App Store submission in progress</p>
     <div class="tech-list">
       <div class="card-button-secondary"><p>Next.js</p></div>
       <div class="card-button-secondary"><p>TypeScript</p></div>
@@ -605,41 +592,4 @@ I’m most effective in environments that value ownership, clarity, and engineer
         ></a>
       </p>
     </footer>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-      //This is where we create the interactivity for our color switching game
-
-      //1.select all the html elements so that we can later manipulate them
-      const body = document.querySelector("body");
-      const colorInput = document.getElementById("color-picker");
-      const colorDiv = document.querySelector(".color-div");
-      const hiddenText = document.querySelector(".color-div p");
-      const resetBtn = document.querySelector(".color-div button");
-      const playBtn = document.getElementById("play-game");
-
-      //2.create the functions
-      function playGame() {
-        //this function enables the play of the game by showing the color selector input
-        colorDiv.style.display = "block";
-        playBtn.style.display = "none";
-      }
-
-      function changeColor() {
-        //take the users selected color on the input, and assign it to be the background color of the website
-        const selectedColor = colorInput.value;
-        body.style.background = selectedColor;
-        resetBtn.style.display = "block";
-        hiddenText.style.display = "block";
-        colorInput.style.display = "none";
-      }
-
-      function resetColor() {
-        body.style.background = "white";
-        colorInput.style.display = "block";
-        playBtn.style.display = "block";
-
-        hiddenText.style.display = "none";
-        resetBtn.style.display = "none";
-        colorDiv.style.display = "none";
-      }
-
-      //3.is 
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
