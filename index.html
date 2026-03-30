@@ -113,12 +113,15 @@ I’m most effective in environments that value ownership, clarity, and engineer
       <summary>What I Built &amp; Shipped</summary>
       <ul class="status-list">
         <li>Conceived and shipped a guided 9-step journaling experience, translating abstract spiritual reflection into a clear, repeatable interaction flow</li>
-        <li>Implemented full Supabase authentication — sign up, login, forgot password, and password reset — with a patched open redirect vulnerability using strict URL origin validation</li>
-        <li>Built journey saving and persistence so users can return to and resume saved journeys across sessions, with Row Level Security (RLS) scoping each user's data</li>
-        <li>Wrapped the web app as a native iOS app using Capacitor; ran a structured TestFlight beta program with real users and iterated on UI, layout, and auth flows from their feedback</li>
-        <li>Implemented deep linking so password reset emails open directly in the app, and configured iOS AutoFill support with Keychain-friendly form semantics</li>
+        <li>Designed responsive layouts with desktop split-screen and mobile bottom-sheet patterns optimized for focus and readability</li>
         <li>Implemented ambient audio playback and subtle motion to support stillness without distracting from content</li>
         <li>Built PDF export functionality at journey completion to allow users to retain reflections offline</li>
+        <li>Launched publicly and continue to maintain the product post-release, incorporating real user feedback into ongoing iteration</li>
+        <li>Implemented full user authentication with Supabase including sign up, login, forgot password, and password reset flows</li>
+        <li>Built journey saving and persistence so users can return to and resume saved journeys across sessions</li>
+        <li>Implemented deep linking so password reset emails open directly in the app rather than the browser</li>
+        <li>Ran a structured TestFlight beta program with real users, collecting feedback and iterating on UI, layout, and auth flows</li>
+        <li>Patched an open redirect vulnerability in the auth callback route by replacing startsWith() URL origin validation with strict URL origin parsing using the URL constructor</li>
       </ul>
     </details>
 
