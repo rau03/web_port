@@ -71,10 +71,35 @@ section {
   gap: 0.5rem;
 }
 
-.cards-grid {
-  display: flex;
+.latest-projects {
+  gap: 3rem;
+}
+
+.latest-projects .project-card {
   flex-direction: column;
-  gap: 2rem;
+  width: 100%;
+}
+
+.latest-projects .project-card .img-div {
+  flex: none;
+  max-width: 100%;
+}
+
+@media (min-width: 640px) {
+  .latest-projects .project-card .img-div {
+    flex: none;
+    max-width: 100%;
+  }
+}
+
+.latest-projects .project-card + .project-card {
+  padding-top: 3rem;
+  border-top: 1px solid var(--border-secondary);
+}
+
+#pmj-printing-case-study {
+  padding-top: 3rem;
+  border-top: 1px solid var(--border-secondary);
 }
 
 .project-card {

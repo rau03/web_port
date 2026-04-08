@@ -82,13 +82,13 @@
           </tbody>
         </table>
       </section>
-      <section>
+      <section class="latest-projects">
         <h2>Latest Projects</h2>
 <div class="project-card project-card-readable">
   <div>
-    <p>March 2026 — Submitted to App Store</p>
+    <p>April 5, 2026 — Live on the App Store</p>
     <h4>Mountain Pathway | Full-Stack Faith-Centered Journaling App</h4>
-    <p>iOS App Store submission in progress</p>
+    <p>Live on the App Store — Download free on iOS</p>
     <div class="tech-list">
       <div class="card-button-secondary"><p>Next.js</p></div>
       <div class="card-button-secondary"><p>TypeScript</p></div>
@@ -102,7 +102,7 @@
     </div>
 
     <p>
-      A faith-centered journaling app guiding users through a structured 9-step reflective experience. Built and shipped as a full-stack production product across web and iOS — with real users, a TestFlight beta program, and a completed App Store submission.
+      A faith-centered journaling app guiding users through a structured 9-step reflective experience. Built and shipped as a full-stack production product across web and iOS — with real users, a TestFlight beta program, and now live on the Apple App Store as of April 5, 2026.
     </p>
 
     <details>
@@ -118,6 +118,8 @@
         <li>Implemented deep linking so password reset emails open directly in the app rather than the browser</li>
         <li>Ran a structured TestFlight beta program with real users, collecting feedback and iterating on UI, layout, and auth flows</li>
         <li>Patched an open redirect vulnerability in the auth callback route by replacing startsWith() URL origin validation with strict URL origin parsing using the URL constructor</li>
+        <li>Navigated three Apple App Store rejections — resolving Guideline 3.1.1 by implementing a build-time component stub replacement pattern to completely exclude donation strings from the iOS binary, and Guideline 5.1.1(v) by building a secure server-side account deletion API using Supabase Admin with service role key authentication</li>
+        <li>Maintained a 41-test Vitest suite across 13 test files throughout development, ensuring production stability across every feature addition</li>
       </ul>
     </details>
 
@@ -148,10 +150,11 @@
     </details>
 
     <div class="project-links">
-      <a target="_blank" href="https://www.themountainpathway.com/">Live</a>
-      <a target="_blank" href="https://github.com/rau03/the-mountain-pathway">GitHub</a>
-      <p>iOS: App Store submission in progress</p>
-      <!-- <a target="_blank" href="#">App Store (coming soon)</a> -->
+      <a target="_blank" rel="noopener" href="https://www.themountainpathway.com/">Live</a>
+      <a target="_blank" rel="noopener" href="https://github.com/rau03/the-mountain-pathway">GitHub</a>
+      <a target="_blank" rel="noopener" href="https://apps.apple.com/app/the-mountain-pathway/id6759012874">App Store</a>
+      <p>iOS: Live on the App Store</p>
+      <a target="_blank" rel="noopener" href="https://apps.apple.com/app/the-mountain-pathway/id6759012874">View on the App Store</a>
     </div>
   </div>
 
@@ -167,8 +170,7 @@
     </a>
   </div>
 </div>
-          </div>
-          <div class="project-card project-card-medium">
+        <div class="project-card project-card-readable">
             <div>
               <p>June 2025</p>
               <h4>Pickleball Court Hub</h4>
@@ -196,10 +198,11 @@
               <div class="project-links">
                 <a
                   target="_blank"
+                  rel="noopener"
                   href="https://court-finder-ten.vercel.app/"
                   >Live</a
                 >
-                <a target="_blank" href="https://github.com/rau03/court-finder"
+                <a target="_blank" rel="noopener" href="https://github.com/rau03/court-finder"
                   >GitHub</a
                 >
               </div>
@@ -215,194 +218,6 @@
                 />
               </a>
             </div>
-          </div>
-        <div class="cards-grid">
-          <div class="project-card project-card-medium">
-            <div>
-              <p>April 2025</p>
-              <h4>The Digital Dragon Market</h4>
-              <div class="tech-list">
-                <div class="card-button-secondary">
-                  <p>NextJS</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>FantaCSS</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>Stripe</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>AWS Amplify</p>
-                </div>
-              </div>
-              <p>
-                A sleek e-commerce platform built with Next.js and Stripe,
-                featuring a responsive design and smooth shopping experience.
-                The project showcases modern web development practices with
-                optimized performance, secure payments, and an intuitive user
-                interface.
-              </p>
-              <div class="project-links">
-                <a
-                  target="_blank"
-                  href="https://main.d1yoxwmupyfkzr.amplifyapp.com"
-                  >Live</a
-                >
-                <a target="_blank" href="https://github.com/rau03/online_store"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-            <div class="img-div">
-              <a href="./public/digitaldragon.jpeg" target="_blank" rel="noopener" title="Open full size">
-                <img
-                  class="big-img img-readable img-bordered img-strong"
-                  src="./public/digitaldragon.jpeg"
-                  alt="The Digital Dragon Market screenshot"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card project-card-medium">
-            <div>
-              <p>February 2025</p>
-              <h4>Brogram</h4>
-              <div class="tech-list">
-                <div class="card-button-secondary">
-                  <p>ReactJs</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>FantaCSS</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>JavaScript</p>
-                </div>
-              </div>
-              <p>
-                A modern React application that guides users through a
-                structured "Bro Split" workout program. Built with React and
-                Vite, it features an intuitive interface for tracking workouts,
-                following proper exercise tempo, and monitoring progress. The
-                app helps fitness enthusiasts achieve their goals through a
-                scientifically-backed Push/Pull/Legs training methodology.
-              </p>
-              <div class="project-links">
-                <a target="_blank" href="https://broworkout.netlify.app/"
-                  >Live</a
-                >
-                <a target="_blank" href="https://github.com/rau03/brogram"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-            <div class="img-div">
-              <a href="./public/brogram.jpeg" target="_blank" rel="noopener" title="Open full size">
-                <img
-                  class="big-img img-readable img-bordered"
-                  src="./public/brogram.jpeg"
-                  alt="Brogram app screenshot"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card project-card-medium">
-            <div>
-              <p>January 2025</p>
-              <h4>Movie Search</h4>
-              <div class="tech-list">
-                <div class="card-button-secondary">
-                  <p>HTML</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>TailwindCSS</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>JavaScript</p>
-                </div>
-              </div>
-              <p>
-                A React-based web application that lets users search and
-                discover movies. Features include movie search functionality,
-                popular movies display, and a favorites system. Built with
-                modern React practices, the app demonstrates clean code
-                organization, API integration, and responsive design principles.
-              </p>
-              <div class="project-links">
-                <a target="_blank" href="https://searchthemovies.netlify.app/"
-                  >Live</a
-                >
-                <a target="_blank" href="https://github.com/rau03/moviesearch"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-            <div class="img-div">
-              <a href="./public/movie.jpeg" target="_blank" rel="noopener" title="Open full size">
-                <img
-                  class="big-img img-readable img-bordered img-strong"
-                  src="./public/movie.jpeg"
-                  alt="Movie Search app screenshot"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card project-card-medium">
-            <div>
-              <p>December 2024</p>
-              <h4>Acme Rockets</h4>
-              <div class="tech-list">
-                <div class="card-button-secondary">
-                  <p>HTML</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>TailwindCSS</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>JavaScript</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>Node.js (Express)</p>
-                </div>
-              </div>
-              <p>
-                A responsive website for "Acme Rockets" showcasing modern web
-                development skills using HTML, Tailwind CSS, and JavaScript.
-                Features include a mobile-friendly design, dark mode support,
-                interactive navigation, and a clean, professional layout with
-                product showcases and testimonials.
-              </p>
-              <div class="project-links">
-                <a
-                  target="_blank"
-                  href="https://acme-rockets-1oaw.onrender.com/"
-                  >Live</a
-                >
-                <a target="_blank" href="https://github.com/rau03/acme-rockets"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-            <div class="img-div">
-            <a href="./public/rockets.jpeg" target="_blank" rel="noopener" title="Open full size">
-                <img
-                  class="big-img img-readable img-bordered img-strong"
-                  src="./public/rockets.jpeg"
-                  alt="Acme Rockets screenshot"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </a>
-            </div>
-          </div>
         </div>
       </section>
 <section id="pmj-printing-case-study">
